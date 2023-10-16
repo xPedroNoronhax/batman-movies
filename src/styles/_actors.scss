@@ -1,0 +1,27 @@
+@use 'variaveis';
+.actors{
+
+    .carousel-item{
+        max-height: 400px;
+        .carousel-caption{
+            background-color: rgba(0, 0, 0, 0.144);
+            color: red ;
+            
+        }
+    }
+
+    
+}
+
+@media (max-width: 768px){
+    .actors__carrousel{
+        display: flex;
+        width: 100%;
+    }
+
+    .carousel-item{
+        img{
+            height: 220px;
+        }
+    }
+}

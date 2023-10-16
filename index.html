@@ -4,9 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header>
+        <div class="container header">
+            <nav class="menu p-3">
+                <h1 class="menu__logo">
+                    <img src="dist/images/batlogo.png" alt="">
+                </h1>
+                <ul class="menu__options d-flex gap-3">
+                    <li class="menu__options__item">
+                        <a class="text--menu" href="#">Home</a>
+                    </li>
+                    <li class="menu__options__item">
+                        <a class="text--menu" href="#actors">Atores</a>
+                    </li>
+                    <li class="menu__options__item">
+                        <a class="text--menu" href="#movies">Filmes</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__title">
+                <h2 class="text--title">Conheça a jornada do heroi nas telonas !</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div class="container">
+        <section class="actors pt-5 id="actors">
+            <h2 class="text-center mb-5 text--title-big">Nossos morcegos ao longo do tempo:</h2>
+            <div class="actors__carrousel ms-md-5 me-5">
+                <div id="actors__carrousel__caption" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+                    </div>
+                    <div class="carousel-inner mb-3">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="dist/images/actors/batwest.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                          <h4 class="text--carousel fs-4">Adam West</h4>
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="dist/images/actors/batkeaton.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <h4 class="text--carousel fs-4">Michael Keaton</h4>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="dist/images/actors/batclooney.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <h4 class="text--carousel fs-4">George Clooney</h4>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="dist/images/actors/batbale.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <h4 class="text--carousel fs-4">Christian Bale</h4>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="dist/images/actors/bataffleck.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <h4 class="text--carousel fs-4">Ben Affleck</h4>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="dist/images/actors/batpattinson.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <h4 class="text--carousel fs-4">Robert Pattinson</h4>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#actors__carrousel__caption" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Filmes -->
+    <div class="container">
+        <section class="movies pt-5" id="movies">
+            <h2 class="text-center text--title-big mb-5">Filmes:</h2>
+            <div class="row movies__section">
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card " style="width: 18rem;">
+                        <img class="" src="dist/images/movies/batman-o-homem-morcego1986.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman- O Homem Morcego(1966)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batman1989.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman (1989)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmanreturns1992.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman: O Retorno (1992)</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row movies__section">
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmanforever1995.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman Eternamente (1995)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmanrobin1997.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman e Robin (1997)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmanbegins2005.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman Begins (2005)</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row movies__section">
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmandarkknight2008.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman: O Cavaleiro das Trevas (2008)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmandarkknightrises2012.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman: O Cavaleiro das Trevas Ressurge (2012)</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 pb-4 movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="dist/images/movies/batmanvssuperman.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Batman vs Superman: A Origem da Justiça (2016)</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row movies__section">
+                <div class="col-4 d-flex justify-content-center movies__section__item">
+                    <div class="card" style="width: 18rem;">
+                            <img src="dist/images/movies/thebatman2022.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">The Batman (2022)</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+        <footer class="footer p-2 mt-5">
+            <img src="dist/images/logodc.png" alt="">
+        </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

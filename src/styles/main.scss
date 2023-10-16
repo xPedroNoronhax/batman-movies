@@ -1,5 +1,49 @@
-$bgBody: red;
+@use 'variaveis';
+@use 'header';
+@use 'actors';
+@use 'movies';
+@use 'footer';
+*{
+    li {
+        list-style-type: none;
+    }
+}
 
 body{
-    background-color: $bgBody;
+    background-color: variaveis.$cordeFundo;
+    font-family: variaveis.$fontePrincipal;
+    color: variaveis.$cordeFonte;
+}
+
+@mixin text($fontSize: 16px) {
+    color: variaveis.$cordeFonte;
+    font-size: $fontSize;
+}
+
+.text {
+    @include text;
+}
+
+.text--title {
+    @include text(25px);
+    text-transform: uppercase;
+}
+
+.text--menu {
+    @include text(25px)
+}
+
+.text--carousel{
+    @include text(32px);
+    color: red;
+    font-weight: 700;
+}
+
+.text--title-big {
+    @include text(40px);
+
+    @media (max-width: 768px){
+        @include text(20px);
+
+    }
 }
